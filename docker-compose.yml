@@ -18,3 +18,9 @@ services:
       - QDRANT__SERVICE__WORKERS=4
       - QDRANT__SERVICE__API_KEY=SUPER_SECRET_API_KEY 
       - QDRANT__SERVICE__ENABLE_TLS=false 
+    networks:
+      - web
+      
+networks:
+  web:
+    external: true
