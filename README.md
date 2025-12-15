@@ -3,6 +3,16 @@
 
 # 🚀 Usage
 
+## copy and edit env vars
+```sh
+cp .env.example .env
+```
+
+## create external network
+```sh
+docker network create web
+```
+
 ## Run
 ```sh
 docker compose up -d
